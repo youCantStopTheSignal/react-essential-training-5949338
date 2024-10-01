@@ -5,7 +5,318 @@ Licensed under the LinkedIn Learning Exercise File License (the "License").
 See LICENSE in the project root for license information.
 
 ATTRIBUTIONS:
-[PLEASE PROVIDE ATTRIBUTIONS OR DELETE THIS AND THE ABOVE LINE “ATTRIBUTIONS”]
+
+npm:postcss  
+https://github.com/postcss/postcss  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:@isaacs/cliui  
+https://github.com/isaacs/cliui  
+License: ISC  
+https://opensource.org/licenses/ISC  
+-------------------
+
+npm:@nodelib/fs.scandir  
+https://github.com/nodelib/nodelib  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:@nodelib/fs.stat  
+https://github.com/nodelib/nodelib  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:@nodelib/fs.walk  
+https://github.com/nodelib/nodelib  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:ansi-regex  
+https://github.com/sindresorhus/ansi-regex  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:ansi-styles  
+https://github.com/sindresorhus/ansi-styles  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:brace-expansion  
+https://github.com/juliangruber/brace-expansion  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:color-convert  
+https://github.com/Qix-/color-convert  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:color-name  
+https://github.com/Qix-/color-name  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:commander  
+https://github.com/tj/commander.js  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:cross-spawn  
+https://github.com/zkochan/cross-spawn  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:cssesc  
+https://github.com/mathiasbynens/cssesc  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:eastasianwidth  
+https://github.com/yangshun/eastasianwidth  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:emoji-regex  
+https://github.com/mathiasbynens/emoji-regex  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:fsevents  
+https://github.com/fsevents/fsevents  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:function-bind  
+https://github.com/Raynos/function-bind  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:glob-parent  
+https://github.com/gulpjs/glob-parent  
+License: ISC  
+https://opensource.org/licenses/ISC  
+-------------------
+
+npm:is-binary-path  
+https://github.com/sindresorhus/is-binary-path  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:is-extglob  
+https://github.com/jonschlinkert/is-extglob  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:is-fullwidth-code-point  
+https://github.com/sindresorhus/is-fullwidth-code-point  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:is-glob  
+https://github.com/jonschlinkert/is-glob  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:is-number  
+https://github.com/jonschlinkert/is-number  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:isexe  
+https://github.com/npm/isexe  
+License: ISC  
+https://opensource.org/licenses/ISC  
+-------------------
+
+npm:js-tokens  
+https://github.com/lydell/js-tokens  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:loose-envify  
+https://github.com/logicpie/loose-envify  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:merge2  
+https://github.com/teambition/merge2  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:normalize-path  
+https://github.com/jonschlinkert/normalize-path  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:object-assign  
+https://github.com/sindresorhus/object-assign  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:path-key  
+https://github.com/sindresorhus/path-key  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:path-parse  
+https://github.com/jbgutierrez/path-parse  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:picomatch  
+https://github.com/micromatch/picomatch  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:pify  
+https://github.com/sindresorhus/pify  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:postcss-value-parser  
+https://github.com/postcss/postcss-value-parser  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:queue-microtask  
+https://github.com/feross/queue-microtask  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:readdirp  
+https://github.com/thlorenz/readdirp  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:resolve  
+https://github.com/browserify/resolve  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:reusify  
+https://github.com/mcollina/reusify  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:run-parallel  
+https://github.com/feross/run-parallel  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:shebang-command  
+https://github.com/kevva/shebang-command  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:shebang-regex  
+https://github.com/sindresorhus/shebang-regex  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:strip-bom  
+https://github.com/sindresorhus/strip-bom  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:strip-json-comments  
+https://github.com/sindresorhus/strip-json-comments  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:table  
+https://github.com/sindresorhus/table  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:tap  
+https://github.com/tapjs/tap  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:to-array  
+https://github.com/jonschlinkert/to-array  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:to-object  
+https://github.com/jonschlinkert/to-object  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:unique-filename  
+https://github.com/sindresorhus/unique-filename  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:universalify  
+https://github.com/RyanZim/universalify  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:uuid  
+https://github.com/uuidjs/uuid  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:which  
+https://github.com/jonschlinkert/which  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
+
+npm:write-file-atomic  
+https://github.com/jonschlinkert/write-file-atomic  
+License: MIT  
+https://opensource.org/licenses/MIT  
+-------------------
 
 Please note, this project may automatically load third party code from external 
 repositories (for example, NPM modules, Composer packages, or other dependencies). 
