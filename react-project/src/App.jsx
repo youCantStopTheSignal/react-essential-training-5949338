@@ -1,28 +1,43 @@
 import "./App.css";
 
+// https://www.linkedin.com/learning/react-essential-training/adding-keys-to-list-items?autoSkip=true&resume=false&u=67698794
+
 const items = [
   "Macaroni and Cheese",
   "Salmon with Potatoes",
-  "Surf and Turf"
-]
+  "Surf and Turf",
+  "Nachos"
+];
+
+const dishObjects = items.map((dish,i)=>({
+  id: i, 
+  title: dish
+}));
+
+console.log(dishObjects);
 
 // App is a component
 // Header is a component
 
-function Header({name, year}) {
+function Header({name}) {
   return (
     <header>
       <h1>{name}'s Kitchen</h1>
-      <p>Copyright {year}</p>
     </header>
   );
 }
+
+function Footer({year}) {
+  return (
+    <p>Copyright {year}</p>
+  )
+} 
 
 function Main ({dishes}) {
   return (
     <ul>
       {dishes.map((dish)=> (
-        <li>{dish}</li>
+        <li key={dish.id} style={{ listStyleType:"none"}}>{dish.title}</li>
       ))}
     </ul>
   )
@@ -30,8 +45,9 @@ function Main ({dishes}) {
 function App() {
   return (
     <div>
-      <Header name="TonyG" year={new Date().getFullYear()}/>
-      <Main dishes={items} />
+      <Header name="TonyG" />
+      <Main dishes={dishObjects} />
+      <Footer year={new Date().getFullYear()} />
     </div>
   );
 }
