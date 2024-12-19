@@ -36,15 +36,18 @@ function Footer({year}) {
 
 function Main ({dishes}) {
   return (
-    <main>
-      <img src={favicon} height={200} alt="A big blue box representing an image"/>
+    <>
+      <div><h2>Welcome!</h2></div>
+      <main>
+        <img src={favicon} height={200} alt="A big blue box representing an image"/>
 
-      <ul>
-        {dishes.map((dish)=> (
-          <li key={dish.id} style={{ listStyleType:"none"}}>{dish.title}</li>
-        ))}
-      </ul>
-    </main>
+        <ul>
+          {dishes.map((dish)=> (
+            <li key={dish.id} style={{ listStyleType:"none"}}>{dish.title}</li>
+          ))}
+        </ul>
+      </main>
+    </>
   )
 }
 function App() {
