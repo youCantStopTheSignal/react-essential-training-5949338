@@ -1,4 +1,5 @@
 import "./App.css";
+import favicon from "./images/favicon.ico";
 
 // https://www.linkedin.com/learning/react-essential-training/adding-keys-to-list-items?autoSkip=true&resume=false&u=67698794
 
@@ -35,11 +36,15 @@ function Footer({year}) {
 
 function Main ({dishes}) {
   return (
-    <ul>
-      {dishes.map((dish)=> (
-        <li key={dish.id} style={{ listStyleType:"none"}}>{dish.title}</li>
-      ))}
-    </ul>
+    <main>
+      <img src={favicon} height={200} alt="A big blue box representing an image"/>
+
+      <ul>
+        {dishes.map((dish)=> (
+          <li key={dish.id} style={{ listStyleType:"none"}}>{dish.title}</li>
+        ))}
+      </ul>
+    </main>
   )
 }
 function App() {
