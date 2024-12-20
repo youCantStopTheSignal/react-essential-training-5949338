@@ -33,10 +33,13 @@ function Footer({year}) {
   )
 } 
 
-function Main ({dishes}) {
+function Main ({ dishes, openStatus, onStatus }) {
   return (
     <>
-      <div><h2>Welcome!</h2></div>
+      <div>
+        <button onClick={()=>onStatus(true)}>I want to be open</button>
+        <h2>Welcome!</h2>
+      </div>
       <main>
         <img src={favicon} height={200} alt="A big blue box representing an image"/>
 
@@ -51,6 +54,10 @@ function Main ({dishes}) {
 }
 
 function App() {
+  // it is a best practice to keep useState at as high a level as possible, for maintainibility.
+  // defining it here helps enforce that.
+  // This can be passed to child components as necessary
+
   const [status, setStatus] = useState(true);
 
   return (
@@ -60,7 +67,7 @@ function App() {
       <button onClick={()=>setStatus( ! status)}>
         {status ? "Close" : "Open"} Restaurant
       </button>
-      <Main dishes={dishObjects} />
+      <Main dishes={ dishObjects } openStatus={ status } onStatus={ setStatus } />
       <Footer year={new Date().getFullYear()} />
     </div>
   );
