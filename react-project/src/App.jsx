@@ -1,6 +1,6 @@
 import "./App.css";
 import favicon from "./images/favicon.ico";
-import { useState, useReducer } from "react";
+import { useEffect, useReducer } from "react";
 
 // https://www.linkedin.com/learning/react-essential-training/adding-keys-to-list-items?autoSkip=true&resume=false&u=67698794
 
@@ -60,11 +60,16 @@ function App() {
   // it is a best practice to keep useState at as high a level as possible, for maintainibility.
   // defining it here helps enforce that.
   // This can be passed to child components as necessary
+  // empty brackets as 2nd param to useEffect causes execution only on INITIALIZATION
+  //  no second param, or [status]], would fire on init and CHANGES to status
 
-//  const [status, setStatus] = useState(true);
   const [status, toggle] = useReducer(
     (status) => ! status, 
     true) 
+
+  useEffect(() => {
+    console.log(`The restaurant status is ${ status ? "open" : "closed"}`)
+  }, [status])
 
   return (
     <div>
