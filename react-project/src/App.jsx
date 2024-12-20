@@ -34,10 +34,13 @@ function Footer({year}) {
 } 
 
 function Main ({ dishes, openStatus, onStatus }) {
+// only display "I want to be open" button if we are closed
   return (
     <>
-      <div>
-        <button onClick={()=>onStatus(true)}>I want to be open</button>
+      <div style={{display:openStatus ? "none" : "block"}}>
+        <button onClick={()=>onStatus(true)}>
+          I want to be open
+        </button>
         <h2>Welcome!</h2>
       </div>
       <main>
