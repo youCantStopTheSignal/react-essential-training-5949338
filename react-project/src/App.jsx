@@ -1,6 +1,6 @@
 import "./App.css";
 import favicon from "./images/favicon.ico";
-import { useState } from "react";
+import { useState, useReducer } from "react";
 
 // https://www.linkedin.com/learning/react-essential-training/adding-keys-to-list-items?autoSkip=true&resume=false&u=67698794
 
@@ -37,11 +37,11 @@ function Main ({ dishes, openStatus, onStatus }) {
 // only display "I want to be open" button if we are closed
   return (
     <>
-      <div style={{display:openStatus ? "none" : "block"}}>
-        <button onClick={()=>onStatus(true)}>
+      <div >
+        <button style={{display:openStatus ? "none" : "inline-block"}} onClick={()=>onStatus(true)}>
           I want to be open
         </button>
-        <h2>Welcome!</h2>
+        <h2 style={{display:openStatus ? "block" : "none"}}>Welcome!</h2>
       </div>
       <main>
         <img src={favicon} height={200} alt="A big blue box representing an image"/>
@@ -61,16 +61,26 @@ function App() {
   // defining it here helps enforce that.
   // This can be passed to child components as necessary
 
-  const [status, setStatus] = useState(true);
+//  const [status, setStatus] = useState(true);
+  const [status, toggle] = useReducer(
+    (status) => ! status, 
+    true) 
 
   return (
     <div>
       <Header name="TonyG" />
+
       <h1>We are {status ? "open" : "closed"}.</h1>
-      <button onClick={()=>setStatus( ! status)}>
+
+      <button onClick={ toggle }>
         {status ? "Close" : "Open"} Restaurant
       </button>
-      <Main dishes={ dishObjects } openStatus={ status } onStatus={ setStatus } />
+
+      <Main 
+        dishes={ dishObjects } 
+        openStatus={ status } 
+        onStatus={ toggle } />
+
       <Footer year={new Date().getFullYear()} />
     </div>
   );
