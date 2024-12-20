@@ -1,5 +1,6 @@
 import "./App.css";
 import favicon from "./images/favicon.ico";
+import { useState } from "react";
 
 // https://www.linkedin.com/learning/react-essential-training/adding-keys-to-list-items?autoSkip=true&resume=false&u=67698794
 
@@ -14,8 +15,6 @@ const dishObjects = items.map((dish,i)=>({
   id: i, 
   title: dish
 }));
-
-console.log(dishObjects);
 
 // App is a component
 // Header is a component
@@ -50,10 +49,15 @@ function Main ({dishes}) {
     </>
   )
 }
+
 function App() {
+  const [status, setStatus] = useState("open");
+
   return (
     <div>
       <Header name="TonyG" />
+      <h1>We are {status}.</h1>
+      <button onClick={()=>setStatus("closed")}>Close Restaurant</button>
       <Main dishes={dishObjects} />
       <Footer year={new Date().getFullYear()} />
     </div>
